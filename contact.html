@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../Css files\Style.css">
+</head>
+
+<body>
+<header>
+    <div class="logo-section logo-section img">
+        <img src="..\Media\Home\Album 1\logo.png" alt="logo" width="150px" height="150px">
+        <div class="company-name">LankaDrive Auto Sales</div>
+    </div>
+     <nav>
+      <div class="nav ul">
+          <ul>
+            <li><a href="index.html" class="btn-nav active">Home</a></li>
+            <li><a href="about.html" class="btn-nav">About Us</a></li>
+            <li><a href="vehicles.html" class="btn-nav">Vehicles</a></li>
+            <li><a href="services.html" class="btn-nav">Services</a></li>
+            <li><a href="reviews.html" class="btn-nav">Reviews</a></li>
+            <li><a href="contact.html" class="btn-nav active">Contact Us</a></li>
+          </ul>
+      </div>
+    </nav>
+</header>
+
+  <main class="contact-container">
+
+    <section class="contact-info">
+      <h2>Our Contact Details</h2>
+      <p><strong>Address:</strong> 24/12, Flower road, Colombo 03, Srilanka</p>
+      <p><strong>Phone:</strong> +94 077 245 3457</p>
+      <p><strong>Email:</strong> Lankadriveauto@gmail.com</p>
+    </section>
+
+    <section class="contact-form-section">
+      <h2>Send Us an Inquiry</h2>
+      <form action="#" method="post" class="contact-form">
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Your full name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" placeholder="Your phone number" required>
+
+        <label for="vehicle">Vehicle Interested In:</label>
+        <input type="text" id="vehicle" name="vehicle" placeholder="Vehicle model or type">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+
+        <fieldset>
+          <legend>Inquiry Type:</legend>
+          <label><input type="radio" name="inquiry_type" value="buy" required> Buy a vehicle</label>
+          <label><input type="radio" name="inquiry_type" value="testdrive"> Request test drive</label>
+        </fieldset>
+
+        <label class="checkbox-label">
+          <input type="checkbox" name="subscribe" value="yes"> Subscribe to promotional offers
+        </label>
+
+        <button type="submit" class="btn-primary">Submit Inquiry</button>
+        
+      </form>
+    </section>
+
+  </main>
+
+<footer>
+  <div class="footer-container">
+    
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p>24/2, Flower road, Colombo 03, Srilanka</p>
+      <p><strong>Phone:</strong> +94 077 245 3457</p>
+      <p><strong>Email:</strong> Lankadriveauto@gmail.com</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Newsletter</h3>
+      <p>Stay updated with our latest news.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

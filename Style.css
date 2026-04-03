@@ -1,0 +1,491 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #0c0c0c;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #406093;
+  padding: 0 20px;
+  color: white;
+}
+
+.logo-section {
+   display: flex;
+    align-items: center;
+}
+
+.logo-section img {
+  height: 150px;
+  width: 150px;
+  margin-right: 10px;
+}
+
+.company-name {
+  font-size: 30px;
+  font-weight: bold;
+}
+    
+.nav ul {
+  list-style: none;
+  text-decoration:bold;
+  display:flex;
+  flex: 1;
+ }
+
+.btn-nav {
+  background-color: #09b1e4;
+  color: white;
+  padding: 12px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 3px 6px rgba(0,123,255,0.6);
+  transition: background-color 0.3s ease
+}
+
+.nav ul li {
+  text-decoration: bold;
+  margin-left: 20px;
+  border-bottom: 3px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+  color: #f7d308;
+}
+
+.active {
+  color: #f7d308;
+  border-bottom: 3px solid #f7d308;
+}
+
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.banner {
+  background-color: #1A1A1B;
+  height: 250px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding: 0 20px;
+}
+
+.banner-content {
+  max-width: 700px;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  text-shadow: 0 0 8px rgba(0,0,0,0.7);
+}
+
+.banner p {
+  font-size: 1.3rem;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.btn-primary {
+  background-color: #d4af37;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  border-bottom: 2px solid #007BFF;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  color: #007BFF;
+}
+
+.featured-vehicles,
+.promotions,
+.gallery {
+   display: flex;
+   gap: 20px;
+   flex-wrap: wrap;
+   justify-content:space-between;
+}
+
+.vehicle-card, .promo-card {
+  background: rgb(255, 253, 253);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex: 1 1 calc(33% - 20px);
+  padding: 20px;
+  box-sizing:border-box;
+  text-align:center;
+
+}
+
+.gallery-item {
+  background: rgb(255, 253, 253);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+
+.vehicle-card img,
+.gallery-item img {
+  width: 320px;
+  border-radius: 6px;
+  object-fit:fill;
+}
+
+.promo-card {
+  flex: 1 1 100%;
+  background: #e6f0ff;
+  color: #004085;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 30px;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: flex;
+  justify-content:space-between;
+}
+
+.about-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-section ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.vehicle-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.vehicle-listings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.vehicle-card {
+  background: rgb(255, 253, 253);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex: 1 1 calc(33% - 20px);
+  padding: 20px;
+  box-sizing:border-box;
+  text-align:center;
+}
+
+.vehicle-card img {
+  width: 550px;
+  height: 400px;
+  object-fit:fill;
+}
+
+.vehicle-card h3 {
+  color: #007BFF;
+  margin-bottom: 8px;
+}
+
+.vehicle-card p {
+  margin: 4px 0;
+  font-size: 1rem;
+}
+
+.vehicle-card .btn-primary {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.vehicle-card .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex: 1 1 calc(33% - 20px);
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.reviews-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.review-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.review-card h3 {
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.review-card p {
+  margin: 6px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.review-card video {
+  margin-top: 15px;
+  border-radius: 6px;
+}
+
+.contact-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.contact-info h2 {
+  color: #007BFF;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.contact-info h3 {
+  margin-top: 30px;
+  color: #007BFF;
+  margin-bottom: 15px;
+}
+
+.contact-info, .contact-form-section {
+  background: white;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.contact-info h2, .contact-form-section h2 {
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.contact-form fieldset {
+  margin-top: 20px;
+  border: none;
+  padding: 0;
+}
+
+.contact-form fieldset label {
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: normal;
+}
+
+.checkbox-label {
+  display: block;
+  margin-top: 15px;
+}
+
+.contact-form button.btn-primary {
+  margin-top: 20px;
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+  .contact-form fieldset label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+footer {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 30px 20px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+
+.footer-col h3 {
+  border-bottom: 2px solid #ebeff1;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.social-links a {
+  display: block;
+  color: #bdc3c7;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #3498db;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.newsletter-form button {
+  padding: 10px;
+  background-color: #3192f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.newsletter-form button:hover {
+  background-color: #2980b9;
+}
